@@ -8,6 +8,8 @@ syntax match scritFunction "\<[a-zA-Z_][a-zA-Z0-9_]*\>\ze\s*(\([^)]*\))"
 syntax match scritBoolean "\<\(true\|false\)\>" 
 syntax match scritNullUndefined "\<\(undefined\|null\)\>" 
 
+
+
 syntax match scritOperator "=\\|+=\\|-=\\|/=\\|*=\\|??="
 syntax match scritArithmetic "+\\|-\\|*\\|/\\|^" 
 syntax match scritComparison "<\\|>\\|<=\\|>=" 
@@ -15,7 +17,7 @@ syntax match scritLogical "||&\\|!"
 syntax match scritComma "," 
 syntax match scritDot "\\." 
 
-syntax match scritControlFlow "\<\(for\|if\|else\|continue\|break\)\>" 
+syntax match scritControlFlow "\<\(for\|if\|else\|continue\|break\|match\|default\|_\)\>" 
 
 syntax match scritImport "\<\(import\|from\|using\)\>" 
 
