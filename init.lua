@@ -35,6 +35,7 @@ vim.api.nvim_set_keymap('n', '<Right>', '<NOP>', {noremap = true})
 vim.api.nvim_command('colorscheme dracula')
 vim.g.NERDTreeQuitOnOpen = 0
 vim.api.nvim_set_keymap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<A-Enter>', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = true})
 vim.api.nvim_set_keymap('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true, noremap = true})
 vim.api.nvim_set_keymap('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<S-Tab>"', {expr = true, noremap = true})
 
