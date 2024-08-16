@@ -39,7 +39,7 @@ syntax match scritBuiltinType "\<\(string\|int\|float\|bool\|array\object\)\>"
 syntax match scritError ";" 
 highlight link scritError Error
 
-syntax match scritIdentifier "\<_\?\l[a-z0-9_]*\>\s*\ze[:=,]"
+syntax match scritIdentifier "\<_\?[a-z][a-zA-Z0-9_]*\>\s*\ze[:=,]"
 
 highlight scritCustomIdentifier guifg=#DDA0DD ctermfg=13
 
